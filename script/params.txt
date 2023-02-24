@@ -1,0 +1,148 @@
+# Synthesis
+
+interconnect_mode enum wireload ple
+auto_partition enum true false
+auto_ungroup enum both none
+bank_based_multibit_inferencing enum false true
+boundary_optimize_constant_hpins enum true false
+boundary_optimize_equal_opposite_hpins enum true false
+boundary_optimize_feedthrough_hpins enum true false
+boundary_optimize_invert_hpins enum false true
+boundary_optimize_invert_hpins_rename_nets enum true false
+cb_preserve_ports_nets enum true false
+comb_seq_merge_message_threshold int 5 15
+control_logic_optimization enum basic advanced none
+delete_flops_on_preserved_net enum true false
+delete_hier_insts_on_preserved_net enum true false
+delete_unloaded_insts enum true false
+delete_unloaded_seqs enum true false
+dont_use_qbar_seq_pins enum false true
+dp_analytical_opt enum standard extreme off
+dp_csa enum basic none
+dp_rewriting enum basic advanced none
+dp_speculation enum none basic
+dp_ungroup_during_syn_map enum true false
+drc_first enum false true
+drc_max_cap_first enum false true
+drc_max_fanout_first enum false true
+drc_max_trans_first enum false true
+driver_for_unloaded_hier_pins enum Z 0
+exact_match_seq_async_ctrls enum false true
+exact_match_seq_sync_ctrls enum false true
+fix_min_drcs enum false true
+force_merge_combos_into_multibit_cells enum false true
+force_merge_seqs_into_multibit_cells enum false true
+hdl_append_generic_ports enum true false
+hdl_auto_async_set_reset enum false true
+hdl_auto_sync_set_reset enum true false
+hdl_bidirectional_assign enum true false
+hdl_bidirectional_wand_wor_assign enum false true
+hdl_case_mux_threshold int 1 3
+hdl_delete_transparent_latch enum true false
+hdl_enable_proc_name enum false true
+hdl_index_mux_threshold int 6 10
+hdl_max_map_to_mux_control_width int 1 3
+hdl_parameterize_module_name enum true false
+hdl_preserve_async_sr_priority_logic enum false true
+hdl_preserve_dangling_output_nets enum true false
+hdl_preserve_sync_ctrl_logic enum false true
+hdl_preserve_sync_set_reset enum false true
+hdl_preserve_unused_flop enum false true
+hdl_preserve_unused_latch enum false true
+hdl_preserve_unused_registers enum false true
+iopt_allow_tiecell_with_inversion enum false true
+iopt_enable_floating_output_check enum false true
+iopt_force_constant_removal enum false true
+iopt_lp_power_analysis_effort enum low medium high
+iopt_remap_avoided_cells enum false true
+iopt_sequential_duplication enum false true
+iopt_sequential_resynthesis enum true false
+iopt_sequential_resynthesis_min_effort enum high medium low
+iopt_ultra_optimization enum false true
+lbr_respect_async_controls_priority enum true false
+map_drc_first enum false true
+map_latch_allow_async_decomp enum false true
+map_prefer_non_inverted_clock_line enum true false
+map_respect_rtl_clk_phase enum false true
+map_to_master_slave_lssd enum false true
+map_to_multiple_output_gates enum true false
+merge_combinational_hier_instances enum true false
+multibit_adaptive_costing enum true false
+multibit_allow_async_phase_map enum true false
+multibit_allow_unused_bits enum true false
+multibit_auto_exclude_registers_with_exceptions enum false true
+multibit_cells_from_different_busses enum true false
+multibit_mapping_effort_level enum auto high low
+multibit_predefined_allow_unused_bits enum false true
+multibit_preserve_inferred_instances enum false true
+multibit_preserved_net_check enum false true
+multibit_seqs_instance_naming_style enum concat auto short
+optimize_constant_0_flops enum true false
+optimize_constant_1_flops enum true false
+optimize_constant_feedback_seqs enum true false
+optimize_constant_latches enum true false
+optimize_merge_flops enum true false
+optimize_merge_latches enum true false
+optimize_net_area enum true false
+optimize_seq_x_to enum 0 1
+partition_based_synthesis enum true false
+propagate_constant_from_timing_model enum true false
+remove_assigns enum false true
+retime_async_reset enum true false
+retime_effort_level enum medium low high
+retime_move_mux_loop_with_reg enum true false
+retime_optimize_reset enum false true
+syn_generic_effort enum medium low high express none
+syn_map_effort enum high low medium express none
+syn_opt_effort enum high low medium express none
+tns_opto enum true false
+ultra_global_mapping enum false true auto
+use_compatibility_based_grouping enum true false
+use_max_cap_lut enum true false
+use_multibit_cells enum false true
+use_multibit_combo_cells enum false true
+use_multibit_seq_and_tristate_cells enum false true
+use_nextstate_type_only_to_assign_sync_ctrls enum false true
+use_scan_seqs_for_non_dft enum true false degenerated_only
+use_tiehilo_for_const enum none duplicate unique
+
+
+# Floorplan
+
+margin_by enum io die
+origin enum llcorner center
+mode enum r su
+aspect float 0.5 1.0
+density float 0.5 1.0
+margin float 1.0 5.0
+make_path_groups enum true false
+
+
+# Placement
+
+detail_irdrop_aware enum none low medium high
+detail_irdrop_aware_timing enum none standard high
+detail_wire_length_opt enum none medium high
+global_activity_power_driven enum none standard high
+global_align_macro enum false true
+global_clock_gate_aware enum false true
+global_clock_power_driven_effort enum none standard high
+global_cong_effort enum low medium high auto
+global_place_io_pins enum false true
+global_soft_guide_strength enum low medium high
+global_timing_effort enum medium high
+global_uniform_density enum false true
+pre_place_opt enum false true
+
+
+# Routing
+
+post_via_pillar_effort enum none low medium high
+post_multicut_via_effort enum low medium high
+litho_driven enum false true
+si_driven enum false true
+timing_driven enum false true
+via_opt enum false true
+via_pillar_opt enum false true
+wire_opt enum false true
+hold enum false true

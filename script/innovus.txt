@@ -1,0 +1,39 @@
+# Floorplan
+
+margin_by enum io die
+origin enum llcorner center
+mode enum r su
+aspect float 0.5 1.0
+density float 0.5 1.0
+margin float 1.0 5.0
+make_path_groups enum true false
+
+
+# Placement
+
+detail_irdrop_aware enum none low medium high
+detail_irdrop_aware_timing enum none standard high
+detail_wire_length_opt enum none medium high
+global_activity_power_driven enum none standard high
+global_align_macro enum false true
+global_clock_gate_aware enum false true
+global_clock_power_driven_effort enum none standard high
+global_cong_effort enum low medium high auto
+global_place_io_pins enum false true
+global_soft_guide_strength enum low medium high
+global_timing_effort enum medium high
+global_uniform_density enum false true
+pre_place_opt enum false true
+
+
+# Routing
+
+post_via_pillar_effort enum none low medium high
+post_multicut_via_effort enum low medium high
+litho_driven enum false true
+si_driven enum false true
+timing_driven enum false true
+via_opt enum false true
+via_pillar_opt enum false true
+wire_opt enum false true
+hold enum false true
