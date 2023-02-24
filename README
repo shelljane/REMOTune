@@ -25,4 +25,10 @@ The parameters for Genus and Innovus is in script/params.txt
 
 The code in script/genus.py and script/innovus.py are used to generate the scripts for Genus and Innovus, respectively. 
 
+Note that we need the .lib, .lef, .captable files, Genus, and Innovus to run the code. 
+
 MOTPE is the method used in AutoTuner. 
+
+## TODO
+
+We are going to support OpenROAD soon. We will release the full code that can be evaluated on OpenROAD.  
