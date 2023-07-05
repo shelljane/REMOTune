@@ -511,7 +511,7 @@ class Morbo:
 import argparse
 def parseArgs(): 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-f", "--flowdir", default="/home/szheng22/tools/OpenROAD-flow-scripts/", required=False, action="store")
+    parser.add_argument("-f", "--flowdir", required=True, action="store")
     parser.add_argument("-p", "--platform", default="sky130hd", required=False, action="store")
     parser.add_argument("-d", "--design", default="gcd", required=False, action="store")
     parser.add_argument("--refclk", required=False, action="store", default=1.5)

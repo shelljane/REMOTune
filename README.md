@@ -29,6 +29,6 @@ Note that we need the .lib, .lef, .captable files, Genus, and Innovus to run the
 
 MOTPE is the method used in AutoTuner. 
 
-## TODO
+## OpenROAD
 
-We are going to support OpenROAD soon. We will release the full code that can be evaluated on OpenROAD.  
+We have supported OpenROAD, see opt/remoroad.py and opt/tperoad.py. The "--flowdir" option specifies the path of OpenROAD-flow-script. 
