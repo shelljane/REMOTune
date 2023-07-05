@@ -1,0 +1,6 @@
+run/*/
+dev/baseline/
+dev/test/
+history*
+variant*
+*/__pycache__/
