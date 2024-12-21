@@ -219,7 +219,7 @@ def main(args, filename="script/genus.txt"):
         fout.write(output)
     print(output)
 
-    os.system("rm -rf " + basedir + "/log/genus.*")
+    # os.system("rm -rf " + basedir + "/log/genus.*")
 
 
 if __name__ == "__main__": 

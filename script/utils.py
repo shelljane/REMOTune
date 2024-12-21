@@ -25,7 +25,7 @@ def getQoR(nameVars, variables, precfg, script, baseline, clkref, basedir="run")
     if not "ERR" in results: 
         for idx in range(len(portion)): 
             portion[idx] = 100 + 100 * ((results[idx] - baseline[idx]) / baseline[idx])
-    os.system("rm -rf " + basedir + " > /dev/null 2> /dev/null")
+    # os.system("rm -rf " + basedir + " > /dev/null 2> /dev/null")
     return portion
 
 

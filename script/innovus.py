@@ -546,7 +546,7 @@ def main(args):
         fout.write(output)
     print(output)
 
-    os.system("rm -rf " + basedir + "/log/innovus.*")
+    # os.system("rm -rf " + basedir + "/log/innovus.*")
 
 
 if __name__ == "__main__": 
