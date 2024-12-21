@@ -185,18 +185,6 @@ class MESMO:
 
 
 
-from analytic_funcs import *
-def test0():
-    nDims = 16
-    nObjs = 2
-    nameVars = ["x" + str(idx) for idx in range(nDims)]
-    typeVars = ["float" for idx in range(nDims)]
-    rangeVars = [[0.0, 1.0] for idx in range(nDims)]
-    funcEval = lambda x: [Powell(list(x.values()), nDims), Perm(list(x.values()), nDims)]
-    model = MESMO(nDims, nObjs, nameVars, typeVars, rangeVars, funcEval, samplesNSGA=1, itersNSGA=1024, iterNewton=1024)
-    results = model.optimize(steps=2**4, timeout=None)
-    list(map(lambda x: print(x[0], "\t", x[1]), results))
-
 import argparse
 def parseArgs():
     parser = argparse.ArgumentParser()
@@ -253,3 +241,4 @@ if __name__ == "__main__":
     results = model.optimize(steps=steps, timeout=None)
     list(map(lambda x: print("Parameter:", x[0], "\n -> Value:", x[1]), results))
     print("[Hypervolume]:", calcHypervolume([refpoint] * nobjs, list(map(lambda x: x[1], results))))
+    
